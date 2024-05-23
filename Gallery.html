@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Galactic Memories</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: url(https://c4.wallpaperflare.com/wallpaper/486/484/974/venus-space-galaxy-wallpaper-preview.jpg) no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            position: relative;
+            z-index: 10;
+        }
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('stars-overlay.png') repeat;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #ff6600;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .navigation {
+            text-align: center;
+        }
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+        .navigation li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .navigation a:hover,
+        .navigation .current {
+            color: #ff6600;
+        }
+        .gallery-container {
+            width: 90%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        .gallery-item {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .video-container,
+        .audio-container {
+            margin-top: 20px;
+        }
+        video,
+        audio {
+            width: 100%;
+            max-height: 300px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            margin-top: 40px;
+        }
+        .photo-gallery,
+        .video-gallery {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Galactic Memories</div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="gallery.html" class="current">Gallery</a></li>
+                <li><a href="Our Insight.html">Our Insights</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="photo-gallery">
+            <div class="gallery-item">
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/421009042_375830145089415_3198855215125455482_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ohRo58X57gkQ7kNvgGT3bIl&_nc_ht=scontent.fmnl8-2.fna&oh=03_Q7cD1QEtgXZks1hmfEBl5VJZk8dfOH4Ea6OblXvB4SNzui4sOw&oe=667578F8" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/441088121_437285362393969_7792555809569013615_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-DbMyhe9FTIQ7kNvgHOsgjk&_nc_ht=scontent.fmnl8-1.fna&oh=03_Q7cD1QHcwR3msqVeYz9bY0lzbt2A2Xc9aZXdM_-trfjHA3Z23Q&oe=66757CB8" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/441051084_752989380320791_6690300535085263905_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Ho1g-Fe5TzgQ7kNvgHxOAaV&_nc_ht=scontent.fmnl8-1.fna&oh=03_Q7cD1QEmvFVx5NiAdfNgMFW7uxdFLrjoyXzshQFbofhrdo7nYw&oe=66758B9A" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/436486164_2788056471352629_8975618544178195367_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=VAzT4w5NecUQ7kNvgH6J_7R&_nc_ht=scontent.fmnl8-3.fna&oh=03_Q7cD1QEXHgUvSEarZWLZjNRvbBXSQQ-q9EGUBdTdD6SzwhwHmQ&oe=66759CAC" alt="Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/440996379_823883145770082_1416680290546431043_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=98aXgF3XNdIQ7kNvgEbK0oL&_nc_ht=scontent.fmnl8-3.fna&oh=03_Q7cD1QGFeMrS6ZVOnmU1euE-VaUlSbRUvrsReHiyVAwWigD6rg&oe=6675A36D" alt="Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/441044834_415905921338145_4915284936298563971_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=DQrH61ZuP9oQ7kNvgHzLTXV&_nc_ht=scontent.fmnl8-3.fna&oh=03_Q7cD1QFi_SiG1Y_AJdr2D21A7ar5qw33s81LCPyM56Exkxe6Xw&oe=66759F3A" alt="Image 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/441037555_986076466297645_250714400870595793_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=u2ORjWsg_DcQ7kNvgFbUae6&_nc_ht=scontent.fmnl8-2.fna&oh=03_Q7cD1QFl_RK9KrpAIebjln99Dg9qO0tLi3nrMpeIVajFGRtd6A&oe=66759466" alt="Image 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/442002443_765613765630738_6290048588060480202_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cT3M-ETViH4Q7kNvgFIZdnH&_nc_ht=scontent.fmnl8-2.fna&oh=03_Q7cD1QFdnbcjqA2jLPTS_ktBsdKVpoEc458XUA4-eBN_09t4Bg&oe=667596BD" alt="Image 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/438171725_893194369232204_1122696375241885342_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=4qZExoH72aMQ7kNvgGKZd8S&_nc_ht=scontent.fmnl8-3.fna&oh=03_Q7cD1QEwZ2ghI_ETB6LyQljndfEoO8mOEye5oOCFBDfFsyT7Ag&oe=667593F8" alt="Image 9">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/438158905_1205655617089262_4698178105203122207_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=0C6iOzJRMe4Q7kNvgHrk0WH&_nc_ht=scontent.fmnl8-1.fna&oh=03_Q7cD1QFJt8YSfPsYcmBN3nQwW2qRPLix9-W0XVCWgG2fuCYuIQ&oe=66757B9D" alt="Image 10">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/441420842_427920630171964_6537012040053060194_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=rjQDiULCEpAQ7kNvgGfGWPF&_nc_ht=scontent.fmnl8-2.fna&oh=03_Q7cD1QFG_mEaTiQmVla-i69E1wX8Io80uwDt2qLF3jnfdqnhMQ&oe=66758D40" alt="Image 11">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/441044831_802749905195784_4944110746396766020_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=RL_AUh8UgsAQ7kNvgF1RfFN&_nc_ht=scontent.fmnl8-3.fna&oh=03_Q7cD1QFGRZz42qDS2FOiD7_xVdktxw-GdpRQWN5YmCMxBsDiBQ&oe=667570A9" alt="Image 12">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/436589490_3604498286478413_377697434982423969_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jkz9NKypjxcQ7kNvgGsihBC&_nc_oc=AdhyvOj94oiHjhKBW42oKa4DD6JpxBCfdkCRFH3IEfrGPnzyPaxhW14zn5HJEDEi6qdtZW56jHTEos7oFIic8505&_nc_ht=scontent.fmnl8-3.fna&oh=03_Q7cD1QH2aAJj-QrHzQ1b19rcWfXzF-lI8qAjThtcqdNJtj2f1g&oe=6675711A" alt="Image 13">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/436683855_1008902407338086_8199182206032483004_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ZxhZgw2Sy_oQ7kNvgHgvs1i&_nc_ht=scontent.fmnl8-1.fna&oh=03_Q7cD1QGvh_HTkmFQ1ntJ8xwrmt1D1pXOJ0WZMS08vUCmhm1iUA&oe=66759E1F" alt="Image 14">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl4-8.fna.fbcdn.net/v/t1.15752-9/436086433_1019048109935858_6658501125615288132_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qN-0-ealNIIQ7kNvgFPK6vf&_nc_ht=scontent.fmnl4-8.fna&oh=03_Q7cD1QGjZa0H_1fJwM7CgEwSCJjOMxOV0fXPmWc7Vz7xuFZiUA&oe=6676D2A7" alt="Image 15">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/440430902_402813032622411_5210105139940079286_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Pej3-5jL2hQQ7kNvgG6THy5&_nc_ht=scontent-mnl1-2.xx&oh=03_Q7cD1QEjeDhicGOuxyApng4WUdt604S0sO-K7dH-uf8nq_V1iw&oe=6676C13B" alt="Image 16">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/442694196_999537665161104_9207096293820456033_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=vl-1L5mtjsEQ7kNvgGiN1xG&_nc_ht=scontent.fmnl8-2.fna&oh=03_Q7cD1QFb0E8GXUrnRvCtYF-vVuUuoEqTaIO7Q4QP9W0yRsE40g&oe=6676AE73" alt="Image 17">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/437661574_423736193706630_657854615684757266_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=iC-i4jVkUt0Q7kNvgHh0jNR&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHPCzH25Nxi9ghWhhrZQepnnbv-RocS5AcVMLxEvonaRw&oe=6676B72A" alt="Image 18">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/440377311_1485516652048981_4764467717784701126_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=soIyGhm_ZN4Q7kNvgHxWXtF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGr1hzaFWPzAq7W2qlzbVr9S_79xzKce3QzqCYafVRB9A&oe=6676A8E8" alt="Image 19">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/440848190_141888178                </div>
+                    <div class="gallery-item">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/440848190_1418881782069928_8981769604384233313_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=m48FjNSLet4Q7kNvgHHb-QD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QF5HOC9DkGuVuwpEZDNQeE9FHiHoOj-BIwcCGERKJkNZw&oe=6676C4E1" alt="Image 20">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/431432775_398014699518415_5956698529628045383_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Nogty4P1NFYQ7kNvgHOT2iT&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QF4gIP03Yu4DFGtcveLbSE946QC97lafgemvLRoXBHPOg&oe=6676C9A8" alt="Image 21">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/431382712_1174810763926995_909666902397546995_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=u2vFCO69gDcQ7kNvgG9_T1q&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGc774ojnWw5fmG4kz4gqPd4VWoPUHV3PhmuySJ3D6OTA&oe=6676CC51" alt="Image 22">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/427078315_1327557791971473_1390654463018154347_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Tj7onwyOZKgQ7kNvgHg_ZEk&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHxPiUIdiQlsqQL54EcDWY4lnlsbiGPhLE7vKQTU_ZfNw&oe=6676BE66" alt="Image 23">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/368386849_351035400806219_6887815813537502496_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=wphTHAihF_cQ7kNvgEGiTRO&_nc_ht=scontent.fmnl8-2.fna&oh=03_Q7cD1QEFcePykRtlwnEY1QLyn83m6MLM0P_JxWtDUX3m6JZQLw&oe=6676C158" alt="Image 24">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/366795087_306031548983174_23489631468365322_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-prKsF9hsaEQ7kNvgHWYyxN&_nc_ht=scontent.fmnl8-1.fna&oh=03_Q7cD1QG1_LbpKiX0NYPkHWGo_yqAjII5B61IViR6Bh1BNcEiLw&oe=6676D718" alt="Image 25">
+                </div>
+            </div>
+
+ <!-- copy the code and repeat the process when adding pictures-->
+        <h2 class="section-title">Video Gallery</h2>
+        <div class="video-gallery">
+            <!-- Placeholder for video items -->
+            <!-- Add more video items as needed and everyone remember that dont mess up the code-->
+            <div class="gallery-item">
+                <video controls>
+                    <source src="path-to-your-video.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Galactic Memories Group 2-Venus. All rights reserved.
+    </footer>
+</body>
+</html>
